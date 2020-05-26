@@ -18,23 +18,24 @@ dependencies {
 
 kotlin {
     jvm()
-    js {
-        browser {
+    js()
 
-        }
-        nodejs {
-
-        }
-    }
-    ios("ios") {
+    iosArm64("ios") {
         binaries {
             framework()
         }
     }
+    iosX64("iosSim") {
+        binaries {
+            framework()
+        }
+    }
+
     sourceSets {
         commonMain {
             dependencies {
                 implementation kotlin('stdlib-common')
+                implementation kotlin("org.reduxkotlin:redux-kotlin:0.4.0")
             }
         }
         commonTest {
@@ -64,13 +65,7 @@ kotlin {
                 implementation kotlin('test-js')
             }
         }
-        iosMain {
-            dependencies {
-
-            }
-        }
-        iosTest {
-
-        }
+        iosSimMain.dependsOn iosMain
+        iosSimTest.dependsOn iosTest
     }
 }
