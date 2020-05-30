@@ -35,7 +35,7 @@ kotlin {
         commonMain {
             dependencies {
                 implementation kotlin('stdlib-common')
-                implementation kotlin("org.reduxkotlin:redux-kotlin:0.4.0")
+                implementation("org.reduxkotlin:redux-kotlin:0.4.0")
             }
         }
         commonTest {

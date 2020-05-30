@@ -1,5 +1,6 @@
 package config
 
+/*
 import redux.DI
 
 class ConfigInteractor {
@@ -7,3 +8,4 @@ class ConfigInteractor {
         DI.store.dispatch(action = ConfigActions.Init(true))
     }
 }
+*/

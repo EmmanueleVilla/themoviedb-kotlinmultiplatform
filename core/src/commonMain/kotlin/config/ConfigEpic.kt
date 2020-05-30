@@ -1,5 +1,6 @@
 package config
 
+/*
 import redux.AppState
 import redux.Epic
 
@@ -12,3 +13,4 @@ internal val configEpic: Epic <AppState> = { store, state, action, dep ->
         else -> false
     }
 }
+*/
